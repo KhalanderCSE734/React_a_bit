@@ -1,0 +1,54 @@
+.Hook{
+    height:500px;
+    width:500px;
+    background-color: lightcoral;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+
+
+    .head{
+        font-size: 2rem;
+        color: aqua;
+    }
+    .cn{
+        background-color: aquamarine;
+        padding: 20px;
+        font-size: xx-large;
+        border-radius: 5px;
+    }
+    .cnt{
+        background-color: aquamarine;
+        /* padding: px; */
+        width:150px;
+        font-size: xx-large;
+        border-radius: 5px;
+    }
+    div{
+        width:100%;
+        display:flex;
+        justify-content: space-evenly;
+    }
+        button{
+            padding:10px;
+            background-color: orange;
+            border:1px solid black;
+            border-radius: 1rem;
+        }
+    p{
+        background-color: brown;
+        width:80%;
+        border-radius: 1rem;
+        text-align:center;
+    }
+
+    .todo{
+        display:unset;
+    }
+}
+
+.Render{
+    background-color: cyan;
+}

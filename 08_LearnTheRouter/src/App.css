@@ -1,0 +1,86 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding:20px 20px;
+    background-color: lightblue;
+    margin-bottom: 30px;
+    div{
+        font-size: 1.5rem;
+        font-weight: 800;
+        background-color: ghostwhite;
+        padding:5px;
+        border-radius: .8rem;
+        cursor: pointer;
+
+    }
+    ul{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 30px;
+        li{
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            /* a{ */
+                font-size: 1.2rem;
+                font-weight: 700;
+                color:blue;
+            /* } */
+            /* &:hover{
+                transform: translateY(-10px);
+            } */
+            position:relative;
+             &::after{
+                content:"";
+                position: absolute;
+                bottom:0;
+                left:0;
+                width: 0;
+                transition:all .5s ease-in-out;
+                border:2px solid transparent;
+                border-radius:1rem;
+             }
+             &:hover::after{
+                width:100%;
+                border:1px solid rgb(28, 213, 189);
+             }
+        }
+    }
+}
+
+h1{
+    font-size:3rem;
+    font-weight: 800;
+}
+
+.content{
+    padding-top:180px;
+    width:100%;
+    display:grid;
+    place-items: center;
+}
+
+/*                               Power Powered By React                  */
+a.active{
+    color:orangered;
+}
+
+.btn{
+    padding:10px;
+    background-color: palegreen;
+    border-radius: 1rem;
+    border:none;
+    color:peru;
+    font-weight: 700;
+    font-size:1.1rem;
+}
+
+
+input{
+    padding:10px;
+    border-radius: .5rem;
+    &:focus{
+        outline:none;
+        border:2px solid blue;
+    }
+}
