@@ -104,6 +104,7 @@ import Contact from './Pages/Contact';
 import Service from './Pages/Service';
 import ContactForm from './Components/ContactForm'
 import ContactInfo from './Components/ContactInfo';
+import Name from './Components/Name';
 import NotFound from './Components/NotFound';
 
 function App() {
@@ -119,7 +120,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/blogs" element={<Blogs/>} />
-          <Route path="/about" element={<About/>} />
+          <Route path="/about" element={<About/>} >
+            <Route path=":name" element={<Name/>}/>
+          </Route>
           <Route path="/service" element={<Service/>} />
           <Route path="/contact" element={<Contact/>} >
             <Route path="contactform" element={<ContactForm/>}/>

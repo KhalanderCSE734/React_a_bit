@@ -9,4 +9,4 @@ const Card = ({curId,curImg,curName}) => {
   )
 }
 
-export default Card
+export default Card 

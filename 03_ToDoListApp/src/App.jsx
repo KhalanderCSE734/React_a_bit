@@ -175,7 +175,7 @@ const App = () => {
         className='h-28 bg-orange-500 flex justify-evenly items-center w-5/6 m-auto mt-10 rounded-lg mb-20'
         onSubmit={submit}
         >
-            <input type="text" className='w-2/6 h-2/5 rounded-md pl-5 placeholder-blue-800 placeholder:text-[15px] focus:ring-2 focus:ring-green-400 outline-none' placeholder="Enter Title" name="title" value={detail.title || ""} onChange={addDesc} ref={titleInput}/>
+            <input type="text" className='w-2/6 h-2/5 rounded-md pl-5 placeholder-blue-800 placeholder:text-[15px] focus:ring-2 focus:ring-green-400 outline-none' placeholder="Enter Title" name="title" value={detail.title || ""} onChange={addDesc} ref={titleInput} autoComplete='false'/>
             <input type="text" className='w-2/6 h-2/5 rounded-md pl-5 placeholder-blue-800 placeholder:text-[15px] focus:ring-2 focus:ring-green-400 outline-none' placeholder="Enter Description " name="desc" value={detail.desc || ""} onChange={addDesc}/>
             <button className='p-4 text-lime-300 bg-pink-500 border-none rounded-2xl' type="submit">Add Todo</button>
       </form>

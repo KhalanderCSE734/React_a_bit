@@ -33,12 +33,15 @@ const App = () => {
     })
   }
   
-  const change = ()=>{
+  const change = (evt)=>{
+    // console.log(evt);
+    // console.log(evt.target.nextElementSibling);
     setDetails((prev)=>{
       return {...prev,name:"Shailesh",switch:false}
     })
   }
-  const change2 = ()=>{
+  const change2 = (evt)=>{
+    console.log(evt);
     setDetails((prev)=>{
       return {...prev,name:"Mohammed Khalander",switch:true}
     })
@@ -210,13 +213,13 @@ const App = () => {
 
     <p>My name is {details.name} I'm in {details.sem} sem I'm studying in {details.College}, {details.City} </p>
         
-        <button onClick={()=>{details.switch?change():change2()}} ref={btnRef}>Change Details</button>
+        <button onClick={(e)=>{details.switch?change(e):change2(e)}} ref={btnRef}>Change Details</button>
 
 
     {/* <ConditionalRendering /> */}
 
     <CR2 />
-    {/* <Form /> */}
+    <Form />
 
 
 

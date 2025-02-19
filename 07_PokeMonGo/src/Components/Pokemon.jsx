@@ -11,8 +11,14 @@ const Pokemon = () => {
     let url = "https://pokeapi.co/api/v2/pokemon?limit=100"
 
     const callApi = async ()=>{
-        let response = await fetch(url);
-        let data = await response.json();
+        setLoading(true);
+        try{
+            let response = await fetch(url);
+            let data = await response.json();
+        }catch(error){
+            console.log(error.message);
+            setErr(error.message);
+        }
         // console.log(data);
         // console.log(data.results);
         let urlArray = data.results.map((cur,ind)=>{
@@ -24,6 +30,7 @@ const Pokemon = () => {
             console.log(ele.url);
         });*/
         setUrlArr(urlArray);
+        setLoading(false);
     }
 
     const fetchData = async ()=>{
@@ -76,7 +83,7 @@ if(loading){
     return <h1 style={{textAlign:"center",fontSize:"50px",color:"lightseagreen"}}>Loading.....</h1>
 }
 if(err){
-    return <h1>Error...{err}</h1>
+    return <h1 className="flex justify-center items-center w-full h-screen text-5xl text-blue-800">Error In Fetching API... {err}</h1>
 }
 
 

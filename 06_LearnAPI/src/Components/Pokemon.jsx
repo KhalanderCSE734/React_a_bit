@@ -25,8 +25,9 @@ const Pokemon = () => {
 */
 
 
+ 
+//                               Fetching particular pokemon
 
-                    //         Fetching particular pokemon
 
 
     /*
@@ -56,14 +57,14 @@ const Pokemon = () => {
 
 
 
-                  //         Handling Error and Loading
+//                                     Handling Error and Loading
 
         const [load,setLoad] = useState(true);
         const [error,setError] = useState(null);
         const [img,setImg] = useState("");
         const [name,setName] = useState("");
         const [detail,setDetail] = useState({});
-         const url = "https://pokeapi.co/api/v2/pokemon/pikachu";
+        const url = "https://pokeapi.co/api/v2/pokemon/pikachu";
     
         const fetchPokemon = async ()=>{
             try{

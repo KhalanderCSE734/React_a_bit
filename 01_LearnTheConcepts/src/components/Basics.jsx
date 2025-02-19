@@ -96,7 +96,7 @@ const Basics = ()=>{
     let insta = [10,"3k","1k"];
     return(
         <>
-         <div className="container grid grid-cols-2 grid-rows-2 gap-x-3 px-20">
+         <div className="container grid grid-cols-2 grid-rows-2 gap-x-3 px-20 py-10">
             <Card name="Cat" desc={desc} insta={insta}/>
             <Card name="Elephant" desc={{image:"elephant.png",role:"App Dev"}} insta={[20,"4k","2k"]}/>
             <Card name="Dog" desc={{image:"dog.png",role:"Cyber-Security"}} insta={[30,"2k","1k"]}/>

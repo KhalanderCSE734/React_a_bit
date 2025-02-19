@@ -2,7 +2,7 @@
     background-color: rgb(111, 0, 128);
     width:45%;
     height:300px;
-    position:absolute;
+    position:fixed;
     top:250px;
     left:400px;
     display:flex;

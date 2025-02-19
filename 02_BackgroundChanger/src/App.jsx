@@ -42,7 +42,7 @@ import Button from './Components/Button'
 function App() {
   const [color,setColor] = useState("white");
   
- /* In JavaScript, 'Event Delegation' is a technique where you add an event listener to a parent element and handle events from its children using properties like .target or .closest. React simplifies this process but retains the same principles.
+ /* In JavaScript, 'Event Delegation' is a technique where you add an event listener to a parent element and handle events from its children using properties like '.target' or '.closest' . React simplifies this process but retains the same principles.
 
 React allows you to handle child events through the parent by passing the event object (SyntheticEvent in React). */
 

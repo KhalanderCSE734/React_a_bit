@@ -12,3 +12,8 @@ body,#root{
   width:100%;
   background-color:aqua;
 }
+
+*::selection{
+  color:darkblue;
+  background-color:violet;
+}
